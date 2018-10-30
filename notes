@@ -1,0 +1,14 @@
+the granularity questions:
+	how do we define operations? exp? sigmoid?
+	any higher level op may be defined in terms of simpler ops
+	there's a performance cost in implementing tons of lower level ops
+
+naming: 
+	you so far use 'input' a lot,
+	except that when talking about graph input,
+	you may want to talk about 'parameters' instead
+
+grad check:
+	you need a function Rn -> R,
+	usually your cost function will return in range R,
+	but any function whose range is in R will let you perform grad check on your computational graph
